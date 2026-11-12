@@ -1,0 +1,36 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# SoundFonts are never distributed: they're the user's own, uploaded on the server.
+soundfonts/
+*.sf2
+*.SF2
+*.sf3
+*.SF3
+*.sfz
+*.dls
+*.DLS
+
+# Generated: the catalogue (it describes the installed SoundFonts) and the audition cache.
+catalog/
+
+# Any rendered or composed output that ends up in this folder.
+*.wav
+*.WAV
+*.mid
+*.MID
+*.midi
+*.flac
+*.ogg
+*.mp3
+*.raw
+*.stems/
+*.render.json
+out/
+output/
+outputs/
+test_outputs/

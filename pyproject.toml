@@ -1,0 +1,25 @@
+[project]
+name = "midigen"
+version = "0.1.0"
+description = "General MIDI composition for LLMs: SoundFont catalogue, composition format, MIDI and FluidSynth rendering"
+requires-python = ">=3.11"
+dependencies = ["mido", "numpy", "jsonschema"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+midigen = "midigen.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["midigen*"]
+
+[tool.setuptools.package-data]
+midigen = ["prompts/*.md", "cues/*.md", "styles/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
